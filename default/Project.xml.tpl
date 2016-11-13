@@ -36,7 +36,18 @@
 	<haxelib name="flixel" />
 
 	<!--In case you want to use the addons package-->
-	<!--<haxelib name="flixel-addons" />-->
+	<haxelib name="flixel-addons" />
+	
+	<!--Mobile libraries-->
+	<haxelib name="linden-flurry" if="mobile" />
+	<haxelib name="openfl-unityads" if="mobile" />
+	<haxelib name="extension-nativedialog" if="mobile" />
+	<haxelib name="extension-googleplaygames" if="mobile" />
+	
+	<setenv name="GOOGLE_PLAY_GAMES_ID" value="XXXXXXXXXXXX" />
+	<android target-sdk-version="17" min-sdk-version="17" if="android" />
+	
+	<haxelib name="extension-share" />
 
 	<!--In case you want to use the ui package-->
 	<!--<haxelib name="flixel-ui" />-->
